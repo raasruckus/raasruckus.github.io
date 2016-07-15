@@ -42,6 +42,11 @@ hr {
   margin: 5px 0;
 }
 
+.ruckus_red
+{
+    color: #e02121;
+}
+
 .img-centered {
     margin: 0 auto
 }
@@ -100,6 +105,33 @@ hr {
 }
 .btn-xl .badge {
     color: #c43100;
+    background-color: #fff
+}
+.btn-vid {
+    color: #fff;
+    background-color: #D61D1D;
+    border-color: #D61D1D;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 10px 30px
+}
+.btn-vid:hover, .btn-vid:focus, .btn-vid:active, .btn-vid.active, .open .dropdown-toggle.btn-vid {
+    color: #fff;
+    background-color: #fec503;
+    border-color: #f6bf01
+}
+.btn-vid:active, .btn-vid.active, .open .dropdown-toggle.btn-vid {
+    background-image: none
+}
+.btn-vid.disabled, .btn-vid[disabled], fieldset[disabled] .btn-vid, .btn-vid.disabled:hover, .btn-vid[disabled]:hover, fieldset[disabled] .btn-vid:hover, .btn-vid.disabled:focus, .btn-vid[disabled]:focus, fieldset[disabled] .btn-vid:focus, .btn-vid.disabled:active, .btn-vid[disabled]:active, fieldset[disabled] .btn-vid:active, .btn-vid.disabled.active, .btn-vid[disabled].active, fieldset[disabled] .btn-vid.active {
+    background-color: #fed136;
+    border-color: #fed136
+}
+.btn-vid .badge {
+    color: #D61D1D;
     background-color: #fff
 }
 .navbar-default {
@@ -435,7 +467,7 @@ section h3.section-subheading {
     background-color: #ffffff;
     color: #fff;
     border-radius: 100%;
-    border: 7px solid #db0000;
+    border: 4px solid #444444;
     text-align: center
 }
 .timeline>li .timeline-image h4 {
