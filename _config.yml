@@ -1,2 +1,29 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: UCSD Raas Ruckus - National Competitive Raas and Garba Team
+email: raas.ruckus@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Raas Ruckus is UC San Diego's premier national collegiate Raas and Garba travel
+  that brings a whole new level of hype and excitement to the dance platform.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.ucsdraasruckus.com" # the base hostname & protocol for your site
+
+twitter:
+  username: UCSDRaasRuckus
+
+facebook:
+  publisher: https://www.facebook.com/ucsdraasruckus/
+
+logo: img/About.png
+
+# Build settings
+markdown: kramdown
+
 gems:
   - jekyll-seo-tag
