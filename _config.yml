@@ -20,7 +20,7 @@ twitter:
 facebook:
   publisher: https://www.facebook.com/ucsdraasruckus/
 
-logo: img/About.png
+logo: /img/About.png
 
 # Build settings
 markdown: kramdown
