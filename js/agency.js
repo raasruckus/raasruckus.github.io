@@ -31,3 +31,5 @@ $(function() {
             $('#imagemodal').modal('show');
         });
 });
+
+$('#carouselHacked').carousel({ interval: 3500});

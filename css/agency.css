@@ -56,6 +56,10 @@ hr {
 .bg-darkest-gray {
     background-color: #222
 }
+.bg-dark-black {
+    background-color: #444;
+    color: #EEEEEE;
+}
 .btn-primary {
     color: #fff;
     background-color: #fed136;
@@ -271,6 +275,8 @@ hr {
 }
 
 header {
+
+    /*
     background-image: url(../img/header-bg3.jpg);
     background-repeat: none;
     background-attachment: scroll;
@@ -280,7 +286,7 @@ header {
     background-size: cover;
     -o-background-size: cover;
     text-align: center;
-    color: #fff
+    color: #fff */
 }
 header .intro-text {
     padding-top: 100px;
@@ -596,14 +602,15 @@ section h3.section-subheading {
 aside.clients img {
     margin: 50px auto
 }
+
 section#contact {
     background-color: #222;
-    background-image: url(../img/map-image.png);
+    background-image: url(../img/WebLogo.png);
     background-position: center;
     background-repeat: no-repeat
 }
-section#contact .section-heading {
-    color: #fff
+section#contact .section-heading, section#contact .section-subheading {
+    color: #EFF
 }
 section#contact .form-group {
     margin-bottom: 25px
@@ -769,3 +776,85 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136
 }
+
+/*
+inspired from http://codepen.io/Rowno/pen/Afykb
+*/
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+/* just for demo purpose */
+    .carousel,
+    .carousel-inner,
+    .carousel-inner .item {
+        background-repeat: none;
+        background-attachment: scroll;
+        background-position: 25% 25%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        text-align: center;
+        color: #fff
+    }
+
+    .item:nth-child(1) {
+      background-image: url(../img/header-bg3.jpg);
+    }
+
+    .item:nth-child(2) {
+      background-image: url(../img/header-bg.jpg);
+      background-size: cover;
+    }
+
+    .item:nth-child(3) {
+      background-image: url(../img/header-bg2.jpg);
+    }
