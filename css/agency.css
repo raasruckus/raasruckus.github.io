@@ -46,7 +46,10 @@ hr {
 {
     color: #e02121;
 }
-
+.ruckus_yellow
+{
+    color: #fed136;
+}
 .img-centered {
     margin: 0 auto
 }
@@ -603,9 +606,19 @@ aside.clients img {
     margin: 50px auto
 }
 
-section#contact {
+section#sponsors {
     background-color: #222;
     background-image: url(../img/WebLogo.png);
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+section#sponsors .section-heading, section#sponsors .section-subheading {
+    color: #EFF
+}
+
+section#contact {
+    background-color: #222;
     background-position: center;
     background-repeat: no-repeat
 }
